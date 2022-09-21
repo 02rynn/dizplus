@@ -1,0 +1,13 @@
+ .log{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,  #C689C6, #8758FF);
+ }
+
+ .login_input{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
+ }

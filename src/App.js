@@ -2,6 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Link, Route, useNavigate } from "react-router-dom";
 import Login from "./components/Login.js";
+import Main from "./components/Main.js";
+
+
 
 function App() {
   let navigate = useNavigate();
@@ -38,6 +41,7 @@ function App() {
           }
         ></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path='/main' element={<Main/>} ></Route>
       </Routes>
     </div>
   );

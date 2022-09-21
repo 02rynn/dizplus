@@ -1,13 +1,84 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ .welcome-header img{
+   width: 250px;
+   height: 120px;
+ }
+
  .log{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to right,  #C689C6, #8758FF);
  }
 
- .login_input{
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-
+ .welcome-header{
+   padding-top: 250px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
  }
+
+ .welcome-header__title{
+   margin-bottom: 20px;
+   font-size: 25px;
+   font-weight: 700;
+ }
+
+ .welcome-header__text{
+   margin-bottom: 50px;
+   font-size: 25px;
+   font-weight: 500;
+ }
+
+ #log-form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 0px 30px;
+ }
+
+ #log-form input{
+   width: 350px;
+   padding: 15px 0px;
+   border: none;
+   font-size: 18px;
+   border-bottom:  1px solid rgba(0,0,0,0.2);
+   margin-bottom: 25px;
+   transition: border-color .3s ease-in-out; /*border 색이 3초동안 갈수록 빠르게? 변하도록*/
+}
+
+#log-form input::placeholder{
+   color: rgba(0,0,0,0.2);
+}
+
+#log-form input:not([type="submit"]){ /*type이 submit이 아닌 input요소들*/
+   border-bottom: 2px solid rgba(0,0,0,0.2);
+   transition: border-color 1s ease-in-out;
+   border: 2px solid transparent;
+
+}
+
+#log-form input:focus{
+ 
+    outline-color:   #4c7ff3; 
+}
+
+#log-form input[type="submit"]{
+   background-color:   #c6a1e8;
+   cursor: pointer;
+   padding: 15px;
+   border-radius: 5px;
+}
+
+#log-form a{
+   text-align: center;
+   text-decoration: none;
+   color: inherit; /*a에게서 색깔 상속받음*/
+   font-size: 13px;
+}

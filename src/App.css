@@ -4,7 +4,6 @@ body{
 }
   
 
-
 .App {
   /* height: 1000px;
   width: 1800px; */
@@ -16,9 +15,12 @@ body{
  
 }
 
-.logo_img img{
-  width: 250px;
+.logo_app {
+  width: 160px;
   height: 120px;
+  position: relative;
+  top: -50px;
+  
 }
 
 .script{ /*나중에 글씨체 바꾸기 */
@@ -29,6 +31,8 @@ body{
 
 .logo_container{
   translate: 120px 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -57,4 +61,8 @@ body{
   
   border: 2px solid skyblue; 
   
+}
+
+.subscribe{
+  margin-top: 30px;
 }

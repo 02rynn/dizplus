@@ -4,8 +4,6 @@ import { Routes, Link, Route, useNavigate } from "react-router-dom";
 import Login from "./components/Login.js";
 import Main from "./components/Main.js";
 
-
-
 function App() {
   let navigate = useNavigate();
 
@@ -18,7 +16,7 @@ function App() {
             <div className="App">
               <div className="logo_container">
                 <div className="logo_img">
-                  <img src="images/whitelogo.png" />
+                  <img className="logo_app" src="images/whitelogo.png" />
                 </div>
                 <p className="script">
                   이 모든 이야기가 여기에 <br />
@@ -41,7 +39,7 @@ function App() {
           }
         ></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path='/main' element={<Main/>} ></Route>
+        <Route path="/main" element={<Main />}></Route>
       </Routes>
     </div>
   );

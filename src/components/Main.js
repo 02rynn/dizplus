@@ -6,6 +6,7 @@ import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Row from "./Row";
 
 // import { FaPlay } from "react-icons/fa";
 // import { FaPlay } from "@fortawesome/free-solid-svg-icons";
@@ -127,8 +128,21 @@ function Main() {
       </div>
 
       {/*ROW 부분 */}
+      <div>
+        <Row id="16" ger="애니메이션" />
+      </div>
 
-      <div></div>
+      <div>
+        <Row id="28" ger="액션" />
+      </div>
+
+      <div>
+        <Row id="10751" ger="가족" />
+      </div>
+
+      <div>
+        <Row id="14" ger="판타지" />
+      </div>
     </div>
   );
 }

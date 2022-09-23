@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import "./Main.css";
+import "./components/Main.css";
 import ReactPlayer from "react-player";
-import Carousel from "./Carousel.js";
+import Carousel from "./Carousel";
 import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -125,10 +125,6 @@ function Main() {
       <div>
         <Carousel />
       </div>
-
-      {/*ROW 부분 */}
-
-      <div></div>
     </div>
   );
 }

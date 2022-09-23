@@ -1,6 +1,6 @@
 .background{
     width: 100vw;
-    height: 200vh;
+    height: 300vh;
     background: linear-gradient(to bottom, black 40%,#182747,#25316D);
 }
 
@@ -163,7 +163,7 @@
     height: 32px;
     border-radius: 10px;
     padding: 0 5px;
-    background-color: rgba(231, 212, 212, 0.8);
+    background-color: gray;
     border: none;
 }
 
@@ -176,10 +176,54 @@
     justify-content: space-around;
     border-radius: 20%;
 }
-.logo_buttons img{
-  
+
+.logo_buttons button{
+    background:linear-gradient(to bottom right , #282A37,#5C5E75);
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-style: none;
+    cursor: pointer;
     width: 140px;
     height: 70px;
-    padding: 10px ;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+.button_container{
+    width: 144px;
+    height: 74px;
+    background:linear-gradient(to top left, #fbfcb9be, #ffcdf3aa, #65d3ffaa) ;
+    border-radius: 20px;
+    box-shadow: #024576;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#마블{
+    width: 100px;
+}
+
+#디즈니{
+    width: 100px;
+    margin-top: 9px;
+    margin-right: 8px;
+}
+
+#스타{
+    width: 100px;
+}
+
+#내셔널{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+#픽사{
+    width: 100px;
 }

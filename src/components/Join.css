@@ -1,7 +1,7 @@
 .join-form{
     width: 100vw;
     height: 130vh;
-    background: linear-gradient(to bottom, black 40%,#182747,#25316D);
+    background: linear-gradient(to bottom,#004484 ,#4c7ff3 , #49feff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
 .join-form__screen{
     width: 500px;
     height: 500px;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.5);
     position: relative;
     margin-top: 40px;
     

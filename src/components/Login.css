@@ -12,7 +12,7 @@
  .log{
     width: 100vw;
     height: 150vh;
-    background: linear-gradient(to right,  #C689C6, #8758FF);
+    background: linear-gradient(to right,  #C689C6, #8758FF,#004484 );
  }
 
  .welcome-header{

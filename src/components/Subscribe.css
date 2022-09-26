@@ -1,0 +1,97 @@
+.join-form{
+    
+    background: linear-gradient(to bottom, black 40%,#182747,#25316D);
+    width: 100vw;
+    height: 100vh;
+}
+
+.join-form__header{
+  display: flex;
+ position: fixed;
+ top:5px;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.login_button{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    position: relative;
+    left: 490px;
+    cursor: pointer;
+}
+
+.login_button:hover{
+    scale: 1.2;
+    color: skyblue;
+}
+
+#구독로고{
+    width:79px;
+    height: 48px;
+    position: relative;
+    right:500px;
+
+}
+
+.join-form__inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form__inputs input{
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.checkbox1{
+    display: flex;
+   
+}
+
+.checkbox2{
+    display: flex;
+   
+}
+
+#finish{
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.Modal {
+    position: fixed;
+    z-index: 200;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 200px;
+    transition: all 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #25316D;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+#close{
+    margin-top: 20px;
+    width: 20%;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}

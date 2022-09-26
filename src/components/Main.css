@@ -1,6 +1,6 @@
 .background{
     width: 100vw;
-    height: 400vh;
+    height: 600vh;
     background: linear-gradient(to bottom, black 40%,#182747,#25316D);
 }
 
@@ -175,6 +175,7 @@
     display: flex;
     justify-content: space-around;
     border-radius: 20%;
+    
 }
 
 .logo_buttons button{

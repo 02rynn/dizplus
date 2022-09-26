@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 function Row({ id, ger }) {
   // const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([{}]);
-  let [pageCnt, setPageCnt] = useState(0);
+  
   let [genre, setGenres] = useState([]);
 
   const getMovies = async () => {

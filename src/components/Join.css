@@ -1,0 +1,100 @@
+.join-form{
+    width: 100vw;
+    height: 130vh;
+    background: linear-gradient(to bottom, black 40%,#182747,#25316D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-form__screen{
+    width: 500px;
+    height: 500px;
+    background-color:black;
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+  
+   
+}
+
+
+p{
+    color: white;
+    
+}
+
+span{
+    color: white;
+}
+#join_logo{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: -300px;
+    left: 300px;
+    animation: logo 1s ease-in-out forwards;
+}
+
+ @keyframes logo{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        rotate: 360deg;
+    }
+ }
+
+ .join-form__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 150px;
+    
+    
+ }
+
+ .join-form__btn-12{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 50px;
+   
+ }
+ .join-form__btn-12 p{
+    position: relative;
+    right: 55px;
+ }
+
+ 
+ .join-form__btn-12 span {
+    position: relative;
+    left: 25px;
+ }
+
+ .join-form__btn-now{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+ }
+
+ .join-form__screen button{
+    background:linear-gradient(to bottom right , #004484 ,#4c7ff3 , #49feff );
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-style: none;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    margin-top: 20px;
+ }

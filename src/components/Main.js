@@ -8,12 +8,16 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Row from "./Row";
 
+
 // import { FaPlay } from "react-icons/fa";
 // import { FaPlay } from "@fortawesome/free-solid-svg-icons";
 // import {} from "@fortawesome/free-regular-svg-icons";
 //import YouTube from "react-youtube";
 
 function Main() {
+
+
+
   return (
     <div className="background">
       <nav className="nav">

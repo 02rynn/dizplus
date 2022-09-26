@@ -3,6 +3,8 @@ import "./App.css";
 import { Routes, Link, Route, useNavigate } from "react-router-dom";
 import Login from "./components/Login.js";
 import Main from "./components/Main.js";
+import Join from "./components/Join.js";
+import Subscribe from "./components/Subscribe";
 
 function App() {
   let navigate = useNavigate();
@@ -24,7 +26,11 @@ function App() {
                 </p>
 
                 <div className="login_buttons">
-                  <button className="subscribe">구독하기</button>
+                  <button 
+                    onClick={()=>{
+                      navigate("/join")
+                    }}                  
+                  className="subscribe">구독하기</button>
                   <button
                     onClick={() => {
                       navigate("/login");
@@ -38,8 +44,11 @@ function App() {
             </div>
           }
         ></Route>
+        <Route path='/join' element={<Join/>}/>
+        <Route path='/subscribe' element={<Subscribe/>}/>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/main" element={<Main />}></Route>
+
       </Routes>
     </div>
   );

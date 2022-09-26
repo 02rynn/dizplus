@@ -8,15 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Row from "./Row";
 
-
 // import { FaPlay } from "react-icons/fa";
 // import { FaPlay } from "@fortawesome/free-solid-svg-icons";
 // import {} from "@fortawesome/free-regular-svg-icons";
 //import YouTube from "react-youtube";
 
 function Main() {
-
-
+  let navigate = useNavigate();
 
   return (
     <div className="background">
@@ -38,11 +36,25 @@ function Main() {
 
           <div className="right">
             <li className="nav__btn">
-              <img className="search" src="images/search.png" />
+              <img
+                style={{ cursor: "pointer" }}
+                className="search"
+                src="images/search.png"
+                onClick={() => {
+                  navigate("/search");
+                }}
+              />
             </li>
 
             <li className="nav__btn">
-              <img id="elsa" src="images/엘사증사.jpeg" />
+              <img
+                style={{ cursor: "pointer" }}
+                id="elsa"
+                src="images/엘사증사.jpeg"
+                onClick={() => {
+                  navigate("/settings");
+                }}
+              />
             </li>
           </div>
         </ul>

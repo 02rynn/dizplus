@@ -1,0 +1,72 @@
+.search-form{
+    background: linear-gradient(to bottom, black 40%,#182747,#25316D);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#서치로고 {
+
+    width:82px;
+    height: 48px;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+  
+
+}
+
+.search-screen{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(0, 0, 0.5, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.search-screen input{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: 2px solid lightgray;
+    position: relative;
+    left: 50px;
+}
+
+.search-screen input:hover {
+    outline-color: #8be8f5;
+}
+
+.search__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search__header h3{
+
+  position: relative;
+  right: 100px;
+  bottom: 30px;
+  margin-left: 50px;
+}
+
+.search__header p{
+  margin-top: 20px;
+  position: relative;
+  left: 130px;
+}
+
+.rankings{
+    display: flex;
+    flex-direction: column;
+    translate: -330px 160px;
+    color: white;
+}
+
+.rankings div{
+    padding: 3px;
+}

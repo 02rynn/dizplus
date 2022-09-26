@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 function Row({ id, ger }) {
   // const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([{}]);
-  
+
   let [genre, setGenres] = useState([]);
 
   const getMovies = async () => {
@@ -33,14 +33,7 @@ function Row({ id, ger }) {
   //   const getGenre = (gid) => {
   //     return "";
   //   };
-  /*
-  장르 id
-  28: 액션
-  16: 애니메이션
-  10751 : 가족
-  14: 판타지 
-  10719 : 로맨스 
-  */
+
   let settings = {
     dots: true,
     infinite: false,

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./Main.css";
 import ReactPlayer from "react-player";
 import Carousel from "./Carousel.js";
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -22,7 +22,14 @@ function Main() {
         <ul className="nav__list">
           <div className="left">
             <li className="nav__btn">
-              <img className="logo_img" src="images/whitelogo.png" />
+              <img
+                className="logo_img"
+                src="images/whitelogo.png"
+                onClick={() => {
+                  navigate("/main");
+                }}
+                style={{ cursor: "pointer" }}
+              />
             </li>
 
             <li className="nav__btn">
@@ -84,10 +91,7 @@ function Main() {
                 영화 재생하기
               </button>
 
-              <button>
-                {/*아이콘 추가하기  */}
-                info
-              </button>
+              <button>{/*아이콘 추가하기  */}+ my list</button>
             </div>
 
             <div className="overview">

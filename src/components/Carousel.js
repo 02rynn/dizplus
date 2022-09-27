@@ -4,11 +4,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Rows from "./Row";
 import { useEffect, useState } from "react";
+import Modal from "react-modal";
+import "./Carousel.css";
 
 function Carousel() {
   // const [loading, setLoading] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
   const [movies, setMovies] = useState([{}]);
-  let [pageCnt, setPageCnt] = useState(0);
+  const [index, setIndex] = useState();
 
   const getMovies = async () => {
     const response = await fetch(
@@ -32,7 +36,7 @@ function Carousel() {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -41,18 +45,80 @@ function Carousel() {
   };
 
   return (
-    <div style={{ margin: "100px 0px" }}>
-      <h1 style={{ color: "white", marginBottom: "40px" }}>오늘의 인기영화</h1>
+    <div style={{ margin: "100px 40px" }}>
+      <h1
+        style={{
+          color: "white",
+          marginBottom: "40px",
+          fontFamily: "Happiness-Sans-Title",
+        }}
+      >
+        오늘의 인기영화
+      </h1>
       <Slider {...settings}>
-        {movies.map((movie) => {
+        {movies.map((movie, i) => {
           return (
-            <div>
-              <img src={getImgUrl(movie.poster_path)} alt="포스터 " />
-              <h2 style={{ color: "white" }}>{movie.title}</h2>
+            <div className="imgbox">
+              <img
+                style={{ cursor: "pointer" }}
+                src={getImgUrl(movie.poster_path)}
+                alt="포스터 "
+                onClick={() => {
+                  setIndex(i);
+                  setModalIsOpen(true);
+                }}
+              />
+
+              {/* <h2 style={{ color: "white" }}>{movie.title}</h2> */}
             </div>
           );
         })}
       </Slider>
+
+      <Modal
+        index={index}
+        className="Modal_main"
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+      >
+        <Contents movie={movies} index={index} />
+        <button
+          className="modal_closebtn"
+          onClick={() => setModalIsOpen(false)}
+        >
+          창닫기{" "}
+        </button>
+      </Modal>
+    </div>
+  );
+}
+
+function Contents({ movie, index }) {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  return (
+    <div key={movie.id} style={{ display: "inline-block" }}>
+      {/* <img src={getImgUrl(movie.poster_path, 100)} alt="포스터 " /> */}
+      <div className="imgbox">
+        <img
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
+          src={`https://image.tmdb.org/t/p/w200${movie[index].poster_path}`}
+          alt="포스터 "
+        />
+        <div className="contents_box">
+          <div className="titlebox">
+            <h1>{movie[index].title}</h1>
+          </div>
+          <div className="overviewbox">{movie[index].overview}</div>
+          <div className="releasedate">개봉일: {movie[index].release_date}</div>
+          <div className="vote"> 평점: {movie[index].vote_average}</div>
+        </div>
+      </div>
+
+      {/* <h2 style={{ color: "white" }}>{movie.title}</h2> */}
     </div>
   );
 }

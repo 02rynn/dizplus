@@ -1,0 +1,58 @@
+
+
+.Modal_main {
+    position: fixed;
+    z-index: 200;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    top: 10%;
+    left: 25%;
+    width: 800px;
+    height: 750px;
+    transition: all 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #25316D;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+
+.modal_closebtn{
+   translate: 0px 30px;
+    font-family: 'InfinitySans-RegularA1';
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+/* .contents_box{
+    translate: -350px -150px;
+}
+
+.titlebox{
+    translate: 0px -100px;
+} */
+
+.overviewbox{
+    /* width: 500px;
+    height: 300px; */
+
+    font-family: 'NanumSquareRound';
+    margin-bottom: 15px;
+} 
+
+.releasedate{
+    font-family: 'NanumSquareRound';
+} 
+
+.vote{
+    font-family: 'NanumSquareRound';
+}

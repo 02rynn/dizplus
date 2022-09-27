@@ -1,6 +1,6 @@
 .background{
     width: 100vw;
-    height: 400vh;
+    height: 350vh;
     background: linear-gradient(to bottom, black 40%,#182747,#25316D);
 }
 
@@ -142,6 +142,7 @@
     padding-bottom: 30px;
     line-height: 1.5rem;
     margin-top: 32px;
+    font-family: 'InfinitySans-RegularA1';
     
 }
 
@@ -165,6 +166,7 @@
     padding: 0 5px;
     background-color: gray;
     border: none;
+    font-family: 'InfinitySans-RegularA1';
 }
 
 .buttons button:hover{

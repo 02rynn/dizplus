@@ -1,10 +1,19 @@
 import "./Search.css";
+import { useNavigate } from "react-router-dom";
 
 function Search() {
+  let navigate = useNavigate();
   return (
     <div className="search-form">
       <div>
-        <img id="서치로고" src="images/whitelogo.png" />
+        <img
+          id="서치로고"
+          src="images/whitelogo.png"
+          onClick={() => {
+            navigate("/main");
+          }}
+          style={{ cursor: "pointer" }}
+        />
       </div>
 
       <div className="search-screen">

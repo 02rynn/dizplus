@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Settings.css";
 
 function Settings() {
+  let navigate = useNavigate();
   const settings = {
     className: "center",
     infinite: true,
@@ -70,6 +72,15 @@ function Settings() {
         <div className="settings_menu">
           <p>관심 콘텐츠</p>
         </div>
+        <button
+          id="홈버튼"
+          onClick={() => {
+            navigate("/main");
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          Home
+        </button>
       </div>
     </div>
   );

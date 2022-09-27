@@ -52,6 +52,8 @@
   right: 100px;
   bottom: 30px;
   margin-left: 50px;
+  font-family: 'Happiness-Sans-Title';
+
 }
 
 .search__header p{
@@ -65,8 +67,11 @@
     flex-direction: column;
     translate: -330px 160px;
     color: white;
+    font-family: 'InfinitySans-RegularA1';
+   
 }
 
 .rankings div{
     padding: 3px;
+    border-bottom: 1px solid rgba(230, 230, 243, 0.5);
 }

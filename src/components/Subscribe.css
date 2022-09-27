@@ -26,11 +26,21 @@
     position: relative;
     left: 990px;
     cursor: pointer;
+    font-family: 'InfinitySans-RegularA1';
 }
 
 .login_button:hover{
     scale: 1.2;
     color: skyblue;
+}
+
+#finish{
+    font-family: 'InfinitySans-RegularA1';
+    
+}
+
+#close{
+    font-family: 'InfinitySans-RegularA1';
 }
 
 #구독로고{

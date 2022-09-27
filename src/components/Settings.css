@@ -62,3 +62,11 @@
     color: white;
    border-bottom: 1px solid white
 }
+
+#홈버튼{
+    margin-top: 50px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}

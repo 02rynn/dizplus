@@ -75,3 +75,25 @@
     padding: 3px;
     border-bottom: 1px solid rgba(230, 230, 243, 0.5);
 }
+
+.modal_search{
+    position: fixed;
+    z-index: 200;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    top: 10%;
+    left: 25%;
+    width: 800px;
+    height: 750px;
+    transition: all 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#000000 50%,#1E2C59);
+    color: white;
+    border-radius: 10px;
+}

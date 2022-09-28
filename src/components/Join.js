@@ -31,8 +31,8 @@ function Join() {
               <p>99,000 | 연</p>
               <span>최대 16% 할인된 가격</span>
               <button
-                onclick={() => {
-                  navigate("/Subscribe");
+                onClick={() => {
+                  navigate("/subscribe");
                 }}
               >
                 12개월 구독하고 할인받기

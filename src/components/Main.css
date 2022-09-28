@@ -16,10 +16,18 @@
     background-size: cover;
 }
 
+.video-text{
+    position: absolute;
+    top: 400px;
+}
+
 .player{
-    position: relative;
-    left: 500px;
-    top: 30px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+  
+    /* left: 500px;
+    top: 30px; */
 }
 
 .logo_img {
@@ -135,6 +143,9 @@
 .vedio-box{
     height: 100%;
     width: 100%;
+    position: relative;
+   
+    
 }
 
 .overview{
@@ -176,7 +187,9 @@
 .logo_buttons{
     display: flex;
     justify-content: space-around;
-    border-radius: 20%;
+    position: relative;
+    flex-wrap: wrap;
+
     
 }
 
@@ -192,6 +205,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
+   
     
 }
 
@@ -229,4 +244,23 @@
 
 #픽사{
     width: 100px;
+}
+
+/* .undervideo{
+    position: relative;
+    top: 50px;
+} */
+@media screen and (max-width: 850px) {
+    .logo_buttons{
+        position: relative;
+        top: 130px;
+        /* margin-bottom: 100px; */
+    }
+    .undervideo{
+        position: relative;
+        top: 230px;
+
+    }
+   
+    
 }

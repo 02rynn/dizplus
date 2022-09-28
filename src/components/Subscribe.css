@@ -1,19 +1,23 @@
 .subs-container{
-    
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to bottom, black 40%,#182747,#25316D);
     width: 100vw;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .subs-form{
     width: 500px;
-    height: 700px;
-   translate: 400px 200px;
+    /* height: 700px; */
+   /* translate: 400px 200px; */
 }
 
 .join-form__header{
   display: flex;
  position: fixed;
+ width: 100%;
  top:5px;
  justify-content: space-between;
  align-items: center;
@@ -24,7 +28,7 @@
     background-color: black;
     font-size: 15px;
     position: relative;
-    left: 990px;
+    margin-right: 50px;
     cursor: pointer;
     font-family: 'InfinitySans-RegularA1';
 }
@@ -112,3 +116,5 @@
     border-style: none;
     cursor: pointer;
 }
+
+

@@ -110,58 +110,61 @@ function Main() {
 
       {/*로고 버튼 5개 */}
 
-      <div className="logo_buttons">
-        <div className="button_container">
-          <button>
-            <img id="디즈니" src="images/월트디즈니로고.png" alt="" />
-          </button>
+      <div className="undervideo">
+        <div className="logo_buttons">
+          <div className="button_container">
+            <button>
+              <img id="디즈니" src="images/월트디즈니로고.png" alt="" />
+            </button>
+          </div>
+
+          <div className="button_container">
+            <button>
+              <img id="마블" src="images/마블로고.png" alt="" />
+            </button>
+          </div>
+
+          <div className="button_container">
+            <button>
+              <img id="내셔널" src="images/내셔널로고.png" alt="" />
+            </button>
+          </div>
+
+          <div className="button_container">
+            <button>
+              <img id="스타" src="images/스타워즈로고.png" alt="" />
+            </button>
+          </div>
+
+          <div className="button_container">
+            <button>
+              <img id="픽사" src="images/픽사로고.png" alt="" />
+            </button>
+          </div>
         </div>
 
-        <div className="button_container">
-          <button>
-            <img id="마블" src="images/마블로고.png" alt="" />
-          </button>
+        {/* <div className="slides"> */}
+        {/*슬라이더 */}
+        <div className="slide1">
+          <Carousel />
         </div>
 
-        <div className="button_container">
-          <button>
-            <img id="내셔널" src="images/내셔널로고.png" alt="" />
-          </button>
+        {/*ROW 부분 */}
+        <div className="slide2">
+          <Row id="16" ger="애니메이션" />
         </div>
 
-        <div className="button_container">
-          <button>
-            <img id="스타" src="images/스타워즈로고.png" alt="" />
-          </button>
+        <div className="slide3">
+          <Row id="28" ger="액션" />
         </div>
 
-        <div className="button_container">
-          <button>
-            <img id="픽사" src="images/픽사로고.png" alt="" />
-          </button>
+        <div className="slide4">
+          <Row id="10751" ger="가족" />
         </div>
-      </div>
 
-      {/*슬라이더 */}
-      <div>
-        <Carousel />
-      </div>
-
-      {/*ROW 부분 */}
-      <div>
-        <Row id="16" ger="애니메이션" />
-      </div>
-
-      <div>
-        <Row id="28" ger="액션" />
-      </div>
-
-      <div>
-        <Row id="10751" ger="가족" />
-      </div>
-
-      <div>
-        <Row id="14" ger="판타지" />
+        <div className="slide5">
+          <Row id="14" ger="판타지" />
+        </div>
       </div>
     </div>
   );

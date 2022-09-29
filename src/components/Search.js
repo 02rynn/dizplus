@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Search() {
   let navigate = useNavigate();
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectMovie, setSelectMovie] = useState();
+  const [index, setIndex] = useState();
 
   const movies = [
     {
@@ -89,94 +89,44 @@ function Search() {
           <input type="text" placeholder="검색어를 입력하세요" />
           <div className="search__header">
             <div>
-              <h3 style={{ color: "white" }}>실시간 인기 검색어</h3>
+              <h3 style={{ color: "white" ,position:"relative" , right:'100px'}}>실시간 인기 검색어</h3>
             </div>
             <div>
-              <p style={{ color: "white", fontSize: "8px" }}>
+              <p style={{ color: "white", fontSize: "8px" , position:'relative', left:'100px' }}>
                 2022.09.26.14.21기준
               </p>
-            </div>
+              </div>
+            
             <div className="rankings">
-              <div
-                onClick={() => {
-                  setSelectMovie(movies[0]);
-                  setModalIsOpen(true);
-                }}
-              >
-                {movies[0].title}
+              <div className="ranking_list">
+                {movies.map((data,i)=>{
+                  return(
+                    <div onClick={()=>{
+                     
+                      setIndex(i)
+                      setModalIsOpen(true)
+                    }}>
+                     <p>
+                      {i+1} .
+                        {movies[i].title}
+                        </p>
+                    </div>
+                  )
+                })}
+                </div>
+            </div>
               </div>
-              {/* <Modal
-                className="modal_search"
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-              >
-                <ModalContents movies={movies} />
-                <button
-                  className="modal_closebtn"
-                  onClick={() => setModalIsOpen(false)}
-                >
-                  창닫기
-                </button>
-              </Modal> */}
+             
+              </form>
+             
 
-              <div
-                onClick={() => {
-                  setSelectMovie(movies[1]);
-                  setModalIsOpen(true);
-                }}
-              >
-                {movies[1].title}
-              </div>
-              {/* <Modal
-                className="modal_search"
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-              >
-                <ModalContents movies={movies} />
-                <button
-                  className="modal_closebtn"
-                  onClick={() => setModalIsOpen(false)}
-                >
-                  창닫기
-                </button>
-              </Modal> */}
-
-              <div
-                onClick={() => {
-                  setSelectMovie(movies[2]);
-                  setModalIsOpen(true);
-                }}
-              >
-                {movies[2].title}
-              </div>
-              {/* <Modal
-                className="modal_search"
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-              >
-                <ModalContents movies={movies} />
-                <button
-                  className="modal_closebtn"
-                  onClick={() => setModalIsOpen(false)}
-                >
-                  창닫기
-                </button>
-              </Modal> */}
-
-              <div
-                onClick={() => {
-                  setSelectMovie(movies[4]);
-                  setModalIsOpen(true);
-                }}
-              >
-                {movies[4].title}
-              </div>
+            
               <Modal
                 className="modal_search"
                 isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)}
               >
-                <ModalContents movies={movies} selectMovie={selectMovie} />
+                <ModalContents movies={movies} index={index} />
                 <button
                   className="modal_closebtn"
                   onClick={() => setModalIsOpen(false)}
@@ -185,21 +135,23 @@ function Search() {
                 </button>
               </Modal>
 
-              <div>{movies[5].title}</div>
-              <div>{movies[6].title}</div>
-              <div>{movies[7].title} </div>
-              <div>{movies[8].title}</div>
-              <div>{movies[9].title}</div>
+            
             </div>
-          </div>
-        </form>
-      </div>
+          
+      
+     
     </div>
   );
 }
 
-function ModalContents({ movies, selectMovie }) {
-  return <h1>{selectMovie.title}</h1>;
+function ModalContents({ movies, index }) {
+  return(
+    <div>
+    <h1>{movies[index].title}</h1>
+    <img src={movies[index].img}></img>
+    <p>{movies[index].overview}</p>
+    </div>
+  ) 
 }
 
 export default Search;

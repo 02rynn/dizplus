@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .search-form{
     background: linear-gradient(to bottom, black 40%,#182747,#25316D);
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,19 +25,21 @@
 
 .search-screen{
     width: 600px;
-    height: 500px;
+    height: 700px;
     background-color: rgba(0, 0, 0.5, 0.5);
     display: flex;
     justify-content: center;
 }
 
 .search-screen input{
+    margin-top: 100px;
     width: 250px;
     height: 40px;
     border-radius: 10px;
     border-style: 2px solid lightgray;
-    position: relative;
-    left: 50px;
+    /* position: relative;
+    left: 50px; */
+    margin-bottom: 30px;
 }
 
 .search-screen input:hover {
@@ -41,16 +48,11 @@
 
 .search__header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    flex-direction: column;
+    align-items: center
 }
 
 .search__header h3{
-
-  position: relative;
-  right: 100px;
-  bottom: 30px;
   margin-left: 50px;
   font-family: 'Happiness-Sans-Title';
 
@@ -59,25 +61,30 @@
 .search__header p{
   margin-top: 20px;
   position: relative;
-  left: 130px;
+  cursor: pointer;
+  /* left: 130px; */
 }
 
 .rankings{
     display: flex;
     flex-direction: column;
-    translate: -330px 160px;
+   align-items: center;
     color: white;
     font-family: 'InfinitySans-RegularA1';
    
 }
 
 .rankings div{
-    padding: 3px;
+    position: relative;
+    right: 15px;
+    display: flex;
+   flex-direction: column;
     border-bottom: 1px solid rgba(230, 230, 243, 0.5);
 }
 
+
 .modal_search{
-    position: fixed;
+     position: relative;
     z-index: 200;
     border: 1px solid #eee;
     box-shadow: 0 2px 2px #ccc;

@@ -1,11 +1,12 @@
 .background{
     width: 100vw;
-    height: 350vh;
+    height: 100%;
     background: linear-gradient(to bottom, black 40%,#182747,#25316D);
+    overflow-y: auto;
 }
 
 .header{
-    height: 56.25vw;
+    height: 27.25vw;
     min-height: 350px;
     display: flex;
     flex-direction: column;
@@ -16,9 +17,16 @@
     background-size: cover;
 }
 
+.thing{
+    position: relative;
+    top: 45px;
+}
+
 .video-text{
-    position: absolute;
-    top: 400px;
+    margin-left: 25px;
+    position: relative;
+    top: -25px;
+    right: -40px;
 }
 
 .player{
@@ -244,23 +252,4 @@
 
 #픽사{
     width: 100px;
-}
-
-/* .undervideo{
-    position: relative;
-    top: 50px;
-} */
-@media screen and (max-width: 850px) {
-    .logo_buttons{
-        position: relative;
-        top: 130px;
-        /* margin-bottom: 100px; */
-    }
-    .undervideo{
-        position: relative;
-        top: 230px;
-
-    }
-   
-    
 }

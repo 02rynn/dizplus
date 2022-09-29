@@ -80,66 +80,68 @@ function Main() {
             muted={true}
             controls={false}
           />
-
-          <div className="video-text">
-            <span style={{ color: "white" }}>겨울왕국2</span>
-
-            <div className="buttons">
-              <button>
-                {/* <FaFontAwesomeIcon icon="fasFaplay" />
-                아이콘 추가하기  */}
-                영화 재생하기
-              </button>
-
-              <button>{/*아이콘 추가하기  */}+ my list</button>
-            </div>
-
-            <div className="overview">
-              내 마법의 힘은 어디서 왔을까? 어느날 부턴가 의문의 목소리가 엘사를
-              부르고, 평화로운 아렌델 왕국을 위협한다.
-              <br />
-              트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과
-              진실을 찾아 떠나야한다고 조언한다.
-              <br />
-              위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 과거의
-              진실을 찾아 놀라운 모험을 떠나게 되는데....
-            </div>
-          </div>
         </div>
       </header>
 
-      {/*로고 버튼 5개 */}
+      <div className="thing">
+        <div className="video-text">
+          <span style={{ color: "white" }}>겨울왕국2</span>
 
-      <div className="undervideo">
-        <div className="logo_buttons">
-          <div className="button_container">
+          <div className="buttons">
             <button>
-              <img id="디즈니" src="images/월트디즈니로고.png" alt="" />
+              {/* <FaFontAwesomeIcon icon="fasFaplay" />
+                아이콘 추가하기  */}
+              영화 재생하기
             </button>
+
+            <button>{/*아이콘 추가하기  */}+ my list</button>
           </div>
 
-          <div className="button_container">
-            <button>
-              <img id="마블" src="images/마블로고.png" alt="" />
-            </button>
+          <div className="overview">
+            내 마법의 힘은 어디서 왔을까? 어느날 부턴가 의문의 목소리가 엘사를
+            부르고, 평화로운 아렌델 왕국을 위협한다.
+            <br />
+            트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과
+            진실을 찾아 떠나야한다고 조언한다.
+            <br />
+            위험에 빠진 아렌델 왕국을 구해야만 하는 엘사와 안나는 과거의 진실을
+            찾아 놀라운 모험을 떠나게 되는데....
           </div>
+        </div>
 
-          <div className="button_container">
-            <button>
-              <img id="내셔널" src="images/내셔널로고.png" alt="" />
-            </button>
-          </div>
+        {/*로고 버튼 5개 */}
 
-          <div className="button_container">
-            <button>
-              <img id="스타" src="images/스타워즈로고.png" alt="" />
-            </button>
-          </div>
+        <div className="undervideo">
+          <div className="logo_buttons">
+            <div className="button_container">
+              <button>
+                <img id="디즈니" src="images/월트디즈니로고.png" alt="" />
+              </button>
+            </div>
 
-          <div className="button_container">
-            <button>
-              <img id="픽사" src="images/픽사로고.png" alt="" />
-            </button>
+            <div className="button_container">
+              <button>
+                <img id="마블" src="images/마블로고.png" alt="" />
+              </button>
+            </div>
+
+            <div className="button_container">
+              <button>
+                <img id="내셔널" src="images/내셔널로고.png" alt="" />
+              </button>
+            </div>
+
+            <div className="button_container">
+              <button>
+                <img id="스타" src="images/스타워즈로고.png" alt="" />
+              </button>
+            </div>
+
+            <div className="button_container">
+              <button>
+                <img id="픽사" src="images/픽사로고.png" alt="" />
+              </button>
+            </div>
           </div>
         </div>
 

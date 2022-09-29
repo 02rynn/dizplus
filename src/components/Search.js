@@ -89,69 +89,73 @@ function Search() {
           <input type="text" placeholder="검색어를 입력하세요" />
           <div className="search__header">
             <div>
-              <h3 style={{ color: "white" ,position:"relative" , right:'100px'}}>실시간 인기 검색어</h3>
+              <h3
+                style={{ color: "white", position: "relative", right: "100px" }}
+              >
+                실시간 인기 검색어
+              </h3>
             </div>
             <div>
-              <p style={{ color: "white", fontSize: "8px" , position:'relative', left:'100px' }}>
+              <p
+                style={{
+                  color: "white",
+                  fontSize: "8px",
+                  position: "relative",
+                  left: "100px",
+                }}
+              >
                 2022.09.26.14.21기준
               </p>
-              </div>
-            
+            </div>
+
             <div className="rankings">
               <div className="ranking_list">
-                {movies.map((data,i)=>{
-                  return(
-                    <div onClick={()=>{
-                     
-                      setIndex(i)
-                      setModalIsOpen(true)
-                    }}>
-                     <p>
-                      {i+1} .
-                        {movies[i].title}
-                        </p>
+                {movies.map((data, i) => {
+                  return (
+                    <div
+                      onClick={() => {
+                        setIndex(i);
+                        setModalIsOpen(true);
+                      }}
+                    >
+                      <p>
+                        {i + 1} .{movies[i].title}
+                      </p>
                     </div>
-                  )
+                  );
                 })}
-                </div>
-            </div>
               </div>
-             
-              </form>
-             
-
-            
-              <Modal
-                className="modal_search"
-                isOpen={modalIsOpen}
-                onRequestClose={() => setModalIsOpen(false)}
-              >
-                <ModalContents movies={movies} index={index} />
-                <button
-                  className="modal_closebtn"
-                  onClick={() => setModalIsOpen(false)}
-                >
-                  창닫기
-                </button>
-              </Modal>
-
-            
             </div>
-          
-      
-     
+          </div>
+        </form>
+
+        <Modal
+          className="modal_search"
+          isOpen={modalIsOpen}
+          onRequestClose={() => setModalIsOpen(false)}
+        >
+          <ModalContents movies={movies} index={index} />
+
+          <button
+            className="modal_closebtn"
+            onClick={() => setModalIsOpen(false)}
+          >
+            창닫기
+          </button>
+        </Modal>
+      </div>
     </div>
   );
 }
 
 function ModalContents({ movies, index }) {
-  return(
+  return (
     <div>
-    <h1>{movies[index].title}</h1>
-    <img src={movies[index].img}></img>
-    <p>{movies[index].overview}</p>
+      <h1>{movies[index].title}</h1>
+      <img src={movies[index].img}></img>
+      <p>{movies[index].overview}</p>
     </div>
-  ) 
+  );
 }
 
 export default Search;

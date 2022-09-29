@@ -7,10 +7,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Row from "./Row";
-
-// import { FaPlay } from "react-icons/fa";
-// import { FaPlay } from "@fortawesome/free-solid-svg-icons";
-// import {} from "@fortawesome/free-regular-svg-icons";
+// import { FaFontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { fasFaPlay } from "react-icons/fa";
+// import { fasFaPlay } from "@fortawesome/free-solid-svg-icons";
+// import { fasFaPl } from "@fortawesome/free-regular-svg-icons";
 //import YouTube from "react-youtube";
 
 function Main() {
@@ -86,8 +86,8 @@ function Main() {
 
             <div className="buttons">
               <button>
-                {/* <FontAwesomeIcon icon="fa-solid fa-play" /> */}
-                {/*아이콘 추가하기  */}
+                {/* <FaFontAwesomeIcon icon="fasFaplay" />
+                아이콘 추가하기  */}
                 영화 재생하기
               </button>
 

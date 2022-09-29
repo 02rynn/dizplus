@@ -20,7 +20,10 @@ function App() {
             <div className="App">
               <div className="logo_container">
                 <div className="logo_img">
-                  <img className="logo_app" src="images/whitelogo.png" />
+                  <img
+                    className="logo_app"
+                    src={process.env.PUBLIC_URL + "/images/whitelogo.png"}
+                  />
                 </div>
                 <p className="script">
                   이 모든 이야기가 여기에 <br />
